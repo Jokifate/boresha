@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jokifate Boresha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f2f6;
+      color: #2d3436;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2d3436, #485460);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2d3436;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0097e6;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    section h2 {
+      color: #0984e3;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    section p {
+      line-height: 1.7;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    #gallery .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      background: #f1f2f6;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.02);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .gallery-item p {
+      padding: 10px;
+      font-size: 0.95rem;
+      color: #2d3436;
+    }
+
+    .youtube-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background-color: #e84118;
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .youtube-button:hover {
+      background-color: #c23616;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      background-color: #dcdde1;
+      font-size: 0.95rem;
+      color: #636e72;
+      margin-top: 60px;
+      line-height: 1.6;
+    }
+
+    footer b {
+      color: #2d3436;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jokifate Boresha</h1>
+    <p>Empowering Farmers. Feeding the Nation.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#mission">Mission</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.youtube.com/@JokifateBoresha" target="_blank">📺 YouTube</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Jokifate Boresha</h2>
+    <p>
+      Jokifate Boresha is a leading agribusiness company dedicated to training and empowering farmers in modern poultry farming techniques. 
+      We provide hands-on workshops, expert consultations, and affordable solutions for layers, broilers, and indigenous chickens.
+    </p>
+  </section>
+
+  <section id="mission">
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to equip communities with practical poultry farming skills, promote food security, 
+      and create sustainable income opportunities through training and innovation.
+    </p>
+
+    <h2>Our Vision</h2>
+    <p>
+      To become the most trusted provider of poultry farming education and support in the region, 
+      transforming lives one farm at a time.
+    </p>
+
+    <h2>Thank You</h2>
+    <p>
+      Thank you for trusting Jokifate Boresha. We look forward to walking with you on your journey to success in poultry farming!
+    </p>
+
+    <a class="youtube-button" href="https://www.youtube.com/@JokifateBoresha" target="_blank">Visit Our YouTube Channel</a>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/training.jpg" alt="Training Session">
+        <p>Farmer training in progress</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/l2.jpg" alt="Chicks">
+        <p>Healthy day-old Uzima chicks</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/l3.jpg" alt="Farm Visit">
+        <p>Our team visiting a poultry farm</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/l6.jpg" alt="Group Session">
+        <p>Community training session</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/farmer-smile.jpg" alt="Happy Farmer">
+        <p>A happy farmer with her flock</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <b>Contact Us</b><br>
+    Phone: +254 712 345 678<br>
+    Email: info@jokifateboresha.org<br><br>
+    &copy; 2025 Jokifate Boresha. All rights reserved.
+  </footer>
+
+</body>
+</html>
